@@ -13,6 +13,9 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+.main {
+  overflow: hidden;
+}
 .btn {
   background-color: #707070;
   color: var(--white-color);
