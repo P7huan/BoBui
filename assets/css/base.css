@@ -12,10 +12,12 @@ html {
   font-family: 'Roboto Condensed', sans-serif;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  text-transform: uppercase;
 }
 .main {
   overflow: hidden;
 }
+
 .btn {
   background-color: #707070;
   color: var(--white-color);
@@ -111,4 +113,7 @@ html {
     -webkit-transform-origin: 100% 0%;
     transform-origin: 100% 0%;
   }
+}
+.page__container {
+  padding: 40px 0;
 }

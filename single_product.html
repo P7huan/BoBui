@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BoBui</title>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="stylesheet" href="./assets/css/grid.css" />
+  <link rel="stylesheet" href="./assets/css/responsive.css" />
+  <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+    rel="stylesheet"
+  />
+  <body>
+    <div class="main">
+      <header class="header">
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-5 c-4 m-4 header__nav-left">
+              <nav class="header__menu">
+                <input type="checkbox" hidden id="menu__drop" class="nav__checkbox" />
+                <label for="menu__drop"><i class="header__icon fas fa-bars"></i></label>
+                <ul class="header__menu-list">
+                  <li class="header__menu-item">
+                    <input type="checkbox" hidden id="shop__menu" class="header__menu-shop--checkbox" />
+                    <label for="shop__menu" class="header__menu-lable">SHOP</label>
+                    <ul class="menu__shop-list">
+                      <li class="menu__shop-item"><a href="" class="menu__shop-link">ALL PRODUCT</a></li>
+                      <li class="menu__shop-item">
+                        <a href="" class="menu__shop-link">TOPS</a>
+                        <ul class="menu__tops-list">
+                          <li class="menu__tops-item"><a href="" class="menu__tops-link">POLOS</a></li>
+                          <li class="menu__tops-item"><a href="" class="menu__tops-link">SHIRTS</a></li>
+                          <li class="menu__tops-item"><a href="" class="menu__tops-link">T-SHIRTS</a></li>
+                          <li class="menu__tops-item"><a href="" class="menu__tops-link">LONG SLEEVES</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header__menu-item">
+                    <a href="" class="header__menu-lable header__menu-link">SALE</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a href="" class="header__menu-lable header__menu-link">MEMBER</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a href="" class="header__menu-lable header__menu-link">ĐĂNG NHẬP/ĐĂNG KÝ</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col l-2 c-4 m-4 header__logo">
+              <a href="" class="header__logo-link">
+                <img src="https://bobui.vn/assets/img/logo/logo-black.svg" alt="Bobui" class="header__logo-img" />
+              </a>
+            </div>
+            <div class="col l-5 c-4 m-4 header__nav-right">
+              <ul class="header__nav-right-list">
+                <li class="header__search header__nav-right-item">
+                  <a href="#seach__hidden" class="header__link"><i class="header__icon fas fa-search"></i></a>
+                  <div id="seach__hidden" class="search__modal">
+                    <img src="https://bobui.vn/assets/img/logo/logo-black.svg" alt="" class="search__modal-img" />
+                    <div class="search__modal-content">
+                      <a href="#"><i class="search__modal-close fas fa-times"></i></a>
+                      <h2 class="search__modal-heading">TÌM KIẾM</h2>
+                      <form class="search__modal-form" action="#">
+                        <input type="text" class="search__modal-input" placeholder="NHẬP TỪ KHOÁ" />
+                        <button class="search__modal-btn"><i class="header__icon fas fa-search"></i></button>
+                      </form>
+                    </div>
+                  </div>
+                </li>
+                <li class="header__cart header__nav-right-item">
+                  <i class="header__icon fas fa-shopping-bag"></i>
+                  <span class="header__cart-notice">0</span>
+                  <div class="header__cart-container">
+                    <div class="header__cart-list">
+                      <!-- Cart item -->
+                      <div class="header__cart-item">
+                        <img src="./assets/img/product/WEBSITE_TEETHORN_F-1.png" alt="" class="header__cart-img" />
+                        <div class="header__cart-info">
+                          <h4 class="header__cart-name">EMBROIDERED THORNS LOGO TEES/ WHITE - S</h4>
+                          <div class="header__cart-price--warp">
+                            <span class="header__cart-qnt">1 x</span>
+                            <span class="header__cart-price">500.000₫</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End item -->
+                      <!-- Cart item -->
+                      <div class="header__cart-item">
+                        <img src="./assets/img/product/WEBSITE_TEETHORN_F-1.png" alt="" class="header__cart-img" />
+                        <div class="header__cart-info">
+                          <h4 class="header__cart-name">EMBROIDERED THORNS LOGO TEES/ WHITE - S</h4>
+                          <div class="header__cart-price--warp">
+                            <span class="header__cart-qnt">1 x</span>
+                            <span class="header__cart-price">500.000₫</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End item -->
+                    </div>
+                    <div class="header__cart-sum">
+                      <span class="header__cart-sum--label">TỔNG</span>
+                      <span class="header__cart-sum--price">1.000.000₫</span>
+                    </div>
+                    <a href="" class="btn header__cart-btn">XEM LẠI GIỎ HÀNG</a>
+                    <a href="" class="btn header__cart-btn">THANH TOÁN</a>
+                  </div>
+                </li>
+                <li class="header__profile header__nav-right-item">
+                  <a href="" class="header__profile-link header__link">
+                    <img src="https://bobui.vn/assets/img/icon/login25.png" alt="" class="header__profile-img" />
+                    <span class="header__profile-content hide-on-mobile-tablet">Đăng Nhập/ Đăng ký</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="main__container">
+        <div class="bread-rumbs">
+          <ul class="bread-rumbs__list">
+            <li class="bread-rumbs__item">
+              <a href="" class="bread-rumbs__link">TRANG CHỦ /</a>
+            </li>
+            <li class="bread-rumbs__item">
+              <a href="" class="bread-rumbs__link">SHOP/</a>
+            </li>
+            <li class="bread-rumbs__item">
+              <a href="" class="bread-rumbs__link">TOPS/</a>
+            </li>
+            <li class="bread-rumbs__item">
+              <a href="" class="bread-rumbs__link">T-SHIRTS/</a>
+            </li>
+            <li class="bread-rumbs__item">
+              <span href="" class="bread-rumbs__link">EMBROIDERED THORNS LOGO TEES/</span>
+            </li>
+            <li class="bread-rumbs__item">
+              <span href="" class="bread-rumbs__link">WHITE</span>
+            </li>
+          </ul>
+        </div>
+        <div class="page__container">
+          <div class="grid wide">
+            <div class="single-product">
+              <div class="row">
+                <div class="col l-6">
+                  <div class="row">
+                    <div class="col l-2"></div>
+                    <div class="col l-8">
+                      <img src="./assets/img/product/WEBSITE_TEETHORN_F-1.png" alt="" class="single-product__avt" />
+                    </div>
+                    <div class="col l-2">
+                      <div class="single-product__thumbnail">
+                        <img
+                          src="./assets/img/product/WEBSITE_TEETHORN_F-1.png"
+                          alt=""
+                          class="single-product__thumbnail-img"
+                        />
+                        <img
+                          src="./assets/img/product/crop3-01-scaled.jpg"
+                          alt=""
+                          class="single-product__thumbnail-img"
+                        />
+                        <img
+                          src="./assets/img/product/WEBSITE_TEETHORN_B-1.png"
+                          alt=""
+                          class="single-product__thumbnail-img"
+                        />
+                        <img
+                          src="./assets/img/product/WEBSITE_TEETHORN_DEATAIL2.jpg"
+                          alt=""
+                          class="single-product__thumbnail-img"
+                        />
+                        <img
+                          src="./assets/img/product/WEBSITE_TEETHORN_DEATAIL1.png"
+                          alt=""
+                          class="single-product__thumbnail-img"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l-6">
+                  <div class="single-product__detail">
+                    <h1 class="detail__name">EMBROIDERED THORNS LOGO TEES/ WHITE</h1>
+                    <div class="detail__price">
+                      <span class="detail__price-old">600.000₫</span>
+                      <span class="detail__price-new">500.000₫</span>
+                    </div>
+                    <div class="detail__variations">
+                      <h3 class="variations__label">CHỌN KÍCH CỠ</h3>
+                      <div class="variations__size">
+                        <div class="variations__size-check">
+                          <input type="radio" id="size__S" hidden name="size" class="variations__size-checkbox" />
+                          <label class="variations__size-label" for="size__S">S</label>
+                        </div>
+                        <div class="variations__size-check">
+                          <input type="radio" id="size__M" hidden name="size" class="variations__size-checkbox" />
+                          <label class="variations__size-label" for="size__M">M</label>
+                        </div>
+                        <div class="variations__size-check">
+                          <input type="radio" id="size__L" hidden name="size" class="variations__size-checkbox" />
+                          <label class="variations__size-label" for="size__L">L</label>
+                        </div>
+                        <div class="variations__size-check">
+                          <input type="radio" id="size__XL" hidden name="size" class="variations__size-checkbox" />
+                          <label class="variations__size-label" for="size__XL">XL</label>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn single-product__btn">Thêm vào giỏ hàng</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-3 m-6 c-12">
+              <img src="https://bobui.vn/assets/img/logo/logo-white.svg" alt="" class="footer__logo" />
+              <div class="footer__social-icon">
+                <a href="" class="footer__social-link"><i class="fab fa-facebook-square"></i></a>
+                <a href="" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                <a href="" class="footer__social-link"><i class="fas fa-envelope"></i></a>
+                <a href="" class="footer__social-link"><i class="fas fa-phone-square-alt"></i></a>
+              </div>
+            </div>
+            <div class="col l-2 m-6 c-12">
+              <h3 class="footer__heading">HỖ TRỢ KHÁCH HÀNG</h3>
+              <ul class="footer__list">
+                <li class="footer__item"><a href="" class="footer__item-link">CHÍNH SÁCH THANH TOÁN</a></li>
+                <li class="footer__item"><a href="" class="footer__item-link">CHÍNH SÁCH ĐỔI TRẢ</a></li>
+                <li class="footer__item"><a href="" class="footer__item-link">CHÍNH SÁCH VẬN CHUYỂN</a></li>
+                <li class="footer__item"><a href="" class="footer__item-link">HƯỚNG DẪN MUA HÀNG</a></li>
+                <li class="footer__item"><a href="" class="footer__item-link">CHÍNH SÁCH BẢO MẬT</a></li>
+              </ul>
+            </div>
+            <div class="col l-2 m-6 c-12">
+              <h3 class="footer__heading">LIÊN KẾT</h3>
+              <ul class="footer__list">
+                <li class="footer__item"><a href="" class="footer__item-link">VỀ BO BỤI</a></li>
+                <li class="footer__item"><a href="" class="footer__item-link">NEWS - EVENTS</a></li>
+                <li class="footer__item"><a href="" class="footer__item-link">HỖ TRỢ KỸ THUẬT</a></li>
+                <li class="footer__item"><a href="" class="footer__item-link">ĐIỀU KHOẢN SỬ DỤNG</a></li>
+                <li class="footer__item"><a href="" class="footer__item-link">LIÊN HỆ</a></li>
+              </ul>
+            </div>
+            <div class="col l-3 m-6 c-12">
+              <h3 class="footer__heading">CÔNG TY TNHH THỜI TRANG BO BỤI</h3>
+              <ul class="footer__list">
+                <li class="footer__item">ĐỊA CHỈ: 91 LÊ THÁNH TÔN, PHƯỜNG BẾN NGHÉ, QUẬN 1, TP HỒ CHÍ MINH</li>
+                <li class="footer__item">GPĐK KINH DOANH SỐ 0316044564, CẤP NGÀY 29/11/2019 BỞI SỞ KH&ĐT TPHCM</li>
+                <li class="footer__item">NGƯỜI ĐẠI DIỆN: ANH PHAN THUẬN</li>
+              </ul>
+            </div>
+            <div class="col l-2 m-12 c-12">
+              <div class="footer__copyright">
+                <a href="" class="footer__copyright-img--link"
+                  ><img src="https://bobui.vn/assets/img/logoSaleNoti.png" alt="" class="footer__copyright-img"
+                /></a>
+                <p class="footer__copyright-content">
+                  COPYRIGHT © 2021 <a href="" class="footer__copyright-link">BOBUI <sup>®</sup> </a> ALL RIGHT RESERVED.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
